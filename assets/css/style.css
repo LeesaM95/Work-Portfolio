@@ -7,43 +7,67 @@
 
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+html {
+    font-size: 70%;
 }
 
-nav ul {
-    display:inline-flex;
-    position:relative;
-    
+body {
+    font-family: 'Alegreya', serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--navlink-color);
+    background-color: var(--lightest-pink);
 }
 
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.625rem;
+    color: var(--navlink-color);
+    font-weight: 700;
+    line-height: 1.1;
+}
 
 h1 {
-    font-size: 300%;
-    font-family: 'Alegreya', serif;
-    margin-left:25px;
-
+    font-size: 4rem;
 }
 
 h2 {
-    text-align: center;
-    font-size: 200%;
-    font-family: 'Alegreya', serif;
-    margin: 3px;
-    color: var(--navlink-color);
+    font-size: 3.5rem;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+header {
     width: 100%;
-    padding:1%;
-    max-height: 125px;
-    background-color: #fdd6e9;
-    color: #787ccd;
+    margin: 0 auto;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+footer {
+    margin: 1.5rem;
+    text-align: center;
 }
 
