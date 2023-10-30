@@ -23,7 +23,7 @@ body {
     font-size: 1.75rem;
     line-height: 1.5;
     color: var(--navlink-color);
-    background-color: var(--lightest-pink);
+    background-color: #FEF3F9;
 }
 
 h1,
@@ -86,6 +86,7 @@ header {
 footer {
     margin: 1.5rem;
     text-align: center;
+    
 }
 
 .top-header {
@@ -94,15 +95,17 @@ footer {
     max-width: 100%;
     padding: 2rem;
     background-color: var(--pink-border);
+    border-bottom: 0.5rem solid var(--box-header-border);
+    justify-content: space-between;
 
 }
 
 .nav-bar {
-    float:right;
-    margin: 2rem;
-    padding-top: 3rem;
-    padding-right: 3rem;
+    float: right;
+    margin-right: 2rem;
+    padding-top: 1.5rem;
     font-size: 2rem;
+    
 }
 
 .row {
@@ -117,33 +120,42 @@ footer {
         justify-content: center;
     }
 
-.work-card-small {
+.left-column {
+    display: inline-block;
+    position: absolute;
+    margin-top: -1rem;
+    margin-right: 2rem;
+    height: 100%;
+    max-width: 310px;
+    padding: 2rem;
+    background-color: var(--pink-border);
+}
+
+
+.work-card {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    max-width: 400px;
-    max-height: 375px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1rem;
     padding: 2rem;
     color: var(--box-header);
     outline: 2px double var(--box-header-border);
     border-width: 4px;
+}
+
+.work-card-small {
+    max-width: 400px;
+    max-height: 375px;
 }
 
 .work-card-big {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     max-width: 600px;
     max-height: 550px;
-    padding: 2rem;
-    color: var(--box-header);
-    outline: 2px double var(--box-header-border);
-    border-width: 4px;
 }
 
 .word-card .work-header {
-    position: absolute;
-    margin: -2rem 0 -1.5rem 0;
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
     padding: 1rem;
     background-color: var(--box-header);
     border: 2px solid var(--box-header-border);
@@ -155,3 +167,20 @@ footer {
     flex-grow: 1;
 }
 
+@media screen and (min-width: 760px) {
+    .card-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+/*
+@media screen and (min-width: 992px) {
+    header {
+        width: 75%;
+    }
+
+    .card-column {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
