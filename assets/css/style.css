@@ -7,6 +7,13 @@
 
 }
 
+* p {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    font-size: 1.6rem;
+}
+
 html {
     font-size: 70%;
 }
@@ -32,6 +39,7 @@ h6 {
 }
 
 h1 {
+    display: inline-block;
     font-size: 4rem;
 }
 
@@ -55,8 +63,17 @@ h6 {
     font-size: 1.5rem;
 }
 
-p {
-    margin-bottom: 1rem;
+ul li {
+    list-style-type: none;
+    margin-left: 25px;
+    position: relative;
+    display: inline-block;
+    justify-content: flex-end;
+}
+
+a {
+    color: var(--box-header);
+    text-decoration: none;
 }
 
 header {
@@ -69,5 +86,72 @@ header {
 footer {
     margin: 1.5rem;
     text-align: center;
+}
+
+.top-header {
+    display: inline-flex;
+    position: relative;
+    max-width: 100%;
+    padding: 2rem;
+    background-color: var(--pink-border);
+
+}
+
+.nav-bar {
+    float:right;
+    margin: 2rem;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    font-size: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    }
+        
+.justify-center {
+        justify-content: center;
+    }
+
+.work-card-small {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 400px;
+    max-height: 375px;
+    padding: 2rem;
+    color: var(--box-header);
+    outline: 2px double var(--box-header-border);
+    border-width: 4px;
+}
+
+.work-card-big {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 600px;
+    max-height: 550px;
+    padding: 2rem;
+    color: var(--box-header);
+    outline: 2px double var(--box-header-border);
+    border-width: 4px;
+}
+
+.word-card .work-header {
+    position: absolute;
+    margin: -2rem 0 -1.5rem 0;
+    padding: 1rem;
+    background-color: var(--box-header);
+    border: 2px solid var(--box-header-border);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.work-card-small .work-card-big {
+    flex-grow: 1;
 }
 
