@@ -1,21 +1,16 @@
 # Work-Portfolio
-Repo for my Portfolio website
 
-# USER STORY
-## I WANT to view a potential employee's deployed portfolio of work samples
-## SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+## Installation
+This website is supposed to showcase any work I've done for both school and work with the ability to add more sections for possible companies to browse during an interviewing process. The CSS is meant to be as condensed and easy to follow as possible with clear direction as to where, and what, each class, id, and element is being styled. Each image on the site has an alt tag for accessibility purposes.
 
-# ACCEPTANCE CRITERIA
-## GIVEN I need to sample a potential employee's previous work
-## WHEN I load their portfolio
-## THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-## WHEN I click one of the links in the navigation
-## THEN the UI scrolls to the corresponding section
-## WHEN I click on the link to the section about their work
-## THEN the UI scrolls to a section with titled images of the developer's applications
-## WHEN I am presented with the developer's first application
-## THEN that application's image should be larger in size than the others
-## WHEN I click on the images of the applications
-## THEN I am taken to that deployed application
-## WHEN I resize the page or view the site on various screens and devices
-## THEN I am presented with a responsive layout that adapts to my viewport
+## Usage
+Users can view this portfolio website to view examples of my professional work in the future during the hiring process. 
+
+## Visuals
+Screenshots of the HTML and CSS codes will be available below as well as a link to the website. 
+
+## Contributions
+The entire code has been written by me with references from school projects. The banner image was sourced from Freepik.
+
+# License
+MIT License
