@@ -9,8 +9,7 @@
     --color8: #fdf6fd;
 }
 
-* p {
-    box-sizing: border-box;
+p {
     padding: 0;
     margin: 0 0 1rem 0;
     font-size: 1.6rem;
@@ -21,9 +20,17 @@ html {
     font-size: 70%;
 }
 
+a {
+    color: var(--color1);
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+}
+main {
+    display: contents;
+}
 
 body {
-    flex-wrap: wrap;
     background-image: linear-gradient(var(--color8), var(--color6), var(--color5));
     font-family: 'Lucida Sans', 
                  'Lucida Sans Regular', 
@@ -32,8 +39,6 @@ body {
                  Geneva, 
                  Verdana, 
                  sans-serif;
-    font-size: 1.75rem;
-    line-height: 1.5;
 
 }
 
@@ -75,8 +80,7 @@ h6 {
 }
 
 header {
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
@@ -84,30 +88,20 @@ header {
     text-align: center;
 }
 
-a {
-    color: var(--color1);
-    font-weight: 600;
-    font-size: 25px;
-    text-decoration: none;
+section {
+    display: flex;
+    flex-flow: row wrap;
 }
 
-main {
-    flex-wrap: wrap;
-
-}
 
 .nav-bar {
+    display: inline;
     list-style-type: none;
-    margin-left: 25px;
-    margin-top: 30px;
-    margin-right: 30px;
-    position: relative;
-    justify-content: flex-end;
 }
 
 
 .header {
-    position: relative;
+    align-items: flex-start;
     max-width: 100%;
     height: 120px;
     padding: 2rem;
@@ -152,29 +146,32 @@ main {
 
 
 .about-section {
-    flex-direction: row;
-    position: absolute;
     margin-top: -20%;
-    margin-left: 45%;
-    width: 629px;
-    height: 325px;
+    width: 75%;
+    margin-left: 25%;
     border: 1px hidden var(--color8);
 
     color: var(--color3);
-    padding: 10px 10px 10px 30px;
+    
 
 }
 
-.body-ody-ody {
-    flex-wrap: wrap;
-    position: absolute;
-    margin-left: 35%;
-    margin-top: -10%;
-    
+#work-rules {
+    justify-content: space-around;
+    width: 75%;
+    margin-left: 25%
+}
+
+#featured-work {
+    flex-basis: 51%;
+    margin: 0 auto;
+}
+
+.other-work {
+    flex-basis: 45%;
 }
 
 #contact {
-    justify-content: center, space-evenly;
     list-style-type: none;
     margin: 1.5rem;
     text-align: center;
